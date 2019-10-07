@@ -19,7 +19,7 @@ If everything is set well, please run the below bat file:
 
 Detailed steps:
 >Step 1  : Istall Tomcat  
-		   Go to the below link and download core zip  
+		   &nbsp;&nbsp;&nbsp;&nbspGo to the below link and download core zip  
 		   https://tomcat.apache.org/download-90.cgi  
 >Step 2  : Unzip the contents to your desired location  
 >Step 3  : Edit the tomcat-users.xml in conf folder  
@@ -28,7 +28,7 @@ Detailed steps:
 			`<role rolename="manager-script"/>`  
 			`<role rolename="manager-jmx"/>`  
 			`<role rolename="manager-status"/>`  
-			`<user username="arun" password="arun" roles="manager-gui, manager-script, manager-jmx, manager-status"/>` 
+			`<user username="arun" password="arun" roles="manager-gui, manager-script, manager-jmx, manager-status"/>`  
 >Step 4  : Copy the below files to a folder  
 			1. Build.properties  
 			2. BuildAndDeployAngular.bat  
