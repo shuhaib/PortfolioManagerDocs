@@ -18,31 +18,31 @@ If everything is set well, please run the below bat file:
 >**BuildAndDeployAngular.bat**
 
 Detailed steps:
->Step 1  : Istall Tomcat\s\s
-		   Go to the below link and download core zip\s\s
-		   https://tomcat.apache.org/download-90.cgi\s\s
->Step 2  : Unzip the contents to your desired location\s\s
->Step 3  : Edit the tomcat-users.xml in conf folder\s\s
-		   Add the below under <tomcat-users> tag\s\s
-			<role rolename="manager-gui"/>\s\s
-			<role rolename="manager-script"/>\s\s
-			<role rolename="manager-jmx"/>\s\s
-			<role rolename="manager-status"/>\s\s
-			<user username="arun" password="arun" roles="manager-gui, manager-script, manager-jmx, manager-status"/>\s\s
->Step 4  : Copy the below files to a folder\s\s
-			1. Build.properties\s\s
-			2. BuildAndDeployAngular.bat\s\s
-			3. BuildAngular.bat\s\s
->Step 5  : Edit Build.properties, the following should be corrected\s\s
-			1. TOM_CAT_ROOT\s\s
-			2. TOM_CAT_PORT, if default(8080) no need to edit, leave it as it is\s\s
-			3. ANGULAR_ROOT\s\s
-			4. ANGULAR_PROJECT_NAME\s\s
->Step 6  : Run BuildAndDeployAngular.bat\s\s
->Step 7  : Check the server is up using the below link\s\s
-		   localhost:<default> in my case it is localhost:8080\s\s
->Step 8  : Click the Manager App button\s\s
->Step 9  : Enter configured username and passedword in Step 3\s\s
->Step 10 : You will see deployed projects and their status, in my case the project name is 'portfolio-management' and running status is 'true'\s\s
->Step 11 : Click on the project name\s\s
->Step 12 : Check everything is working fine\s\s
+>Step 1  : Istall Tomcat  
+		   Go to the below link and download core zip  
+		   https://tomcat.apache.org/download-90.cgi  
+>Step 2  : Unzip the contents to your desired location  
+>Step 3  : Edit the tomcat-users.xml in conf folder  
+		   Add the below under <tomcat-users> tag  
+			<role rolename="manager-gui"/>  
+			<role rolename="manager-script"/>  
+			<role rolename="manager-jmx"/>  
+			<role rolename="manager-status"/>  
+			<user username="arun" password="arun" roles="manager-gui, manager-script, manager-jmx, manager-status"/>  
+>Step 4  : Copy the below files to a folder  
+			1. Build.properties  
+			2. BuildAndDeployAngular.bat  
+			3. BuildAngular.bat  
+>Step 5  : Edit Build.properties, the following should be corrected  
+			1. TOM_CAT_ROOT  
+			2. TOM_CAT_PORT, if default(8080) no need to edit, leave it as it is  
+			3. ANGULAR_ROOT  
+			4. ANGULAR_PROJECT_NAME  
+>Step 6  : Run BuildAndDeployAngular.bat  
+>Step 7  : Check the server is up using the below link  
+		   localhost:<default> in my case it is localhost:8080  
+>Step 8  : Click the Manager App button  
+>Step 9  : Enter configured username and passedword in Step 3  
+>Step 10 : You will see deployed projects and their status, in my case the project name is 'portfolio-management' and running status is 'true'  
+>Step 11 : Click on the project name  
+>Step 12 : Check everything is working fine  
