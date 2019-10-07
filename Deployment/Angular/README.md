@@ -19,28 +19,28 @@ If everything is set well, please run the below bat file:
 
 Detailed steps:
 >Step 1  : Istall Tomcat  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Go to the below link and download core zip  
-		   https://tomcat.apache.org/download-90.cgi  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Go to the below link and download core zip  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://tomcat.apache.org/download-90.cgi  
 >Step 2  : Unzip the contents to your desired location  
 >Step 3  : Edit the tomcat-users.xml in conf folder  
-		   Add the below under <tomcat-users> tag  
-			`<role rolename="manager-gui"/>`  
-			`<role rolename="manager-script"/>`  
-			`<role rolename="manager-jmx"/>`  
-			`<role rolename="manager-status"/>`  
-			`<user username="arun" password="arun" roles="manager-gui, manager-script, manager-jmx, manager-status"/>`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Add the below under <tomcat-users> tag  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<role rolename="manager-gui"/>`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<role rolename="manager-script"/>`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<role rolename="manager-jmx"/>`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<role rolename="manager-status"/>`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`<user username="arun" password="arun" roles="manager-gui, manager-script, manager-jmx, manager-status"/>`  
 >Step 4  : Copy the below files to a folder  
-			1. Build.properties  
-			2. BuildAndDeployAngular.bat  
-			3. BuildAngular.bat  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Build.properties  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. BuildAndDeployAngular.bat  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. BuildAngular.bat  
 >Step 5  : Edit Build.properties, the following should be corrected  
-			1. TOM_CAT_ROOT  
-			2. TOM_CAT_PORT, if default(8080) no need to edit, leave it as it is  
-			3. ANGULAR_ROOT  
-			4. ANGULAR_PROJECT_NAME  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. TOM_CAT_ROOT  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. TOM_CAT_PORT, if default(8080) no need to edit, leave it as it is  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. ANGULAR_ROOT  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. ANGULAR_PROJECT_NAME  
 >Step 6  : Run BuildAndDeployAngular.bat  
 >Step 7  : Check the server is up using the below link  
-		   `localhost:<default>` in my case it is `localhost:8080`  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`localhost:<default>` in my case it is `localhost:8080`  
 >Step 8  : Click the Manager App button  
 >Step 9  : Enter configured username and passedword in Step 3  
 >Step 10 : You will see deployed projects and their status, in my case the project name is 'portfolio-management' and running status is 'true'  
