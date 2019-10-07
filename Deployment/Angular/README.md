@@ -19,7 +19,7 @@ If everything is set well, please run the below bat file:
 
 Detailed steps:
 >Step 1  : Istall Tomcat  
-		   &nbsp;&nbsp;&nbsp;&nbsp; Go to the below link and download core zip  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Go to the below link and download core zip  
 		   https://tomcat.apache.org/download-90.cgi  
 >Step 2  : Unzip the contents to your desired location  
 >Step 3  : Edit the tomcat-users.xml in conf folder  
