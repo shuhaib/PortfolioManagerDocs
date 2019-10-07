@@ -24,11 +24,11 @@ Detailed steps:
 >Step 2  : Unzip the contents to your desired location  
 >Step 3  : Edit the tomcat-users.xml in conf folder  
 		   Add the below under <tomcat-users> tag  
-			<role rolename="manager-gui"/>  
-			<role rolename="manager-script"/>  
-			<role rolename="manager-jmx"/>  
-			<role rolename="manager-status"/>  
-			<user username="arun" password="arun" roles="manager-gui, manager-script, manager-jmx, manager-status"/>  
+			`<role rolename="manager-gui"/>`  
+			`<role rolename="manager-script"/>`  
+			`<role rolename="manager-jmx"/>`  
+			`<role rolename="manager-status"/>`  
+			`<user username="arun" password="arun" roles="manager-gui, manager-script, manager-jmx, manager-status"/>` 
 >Step 4  : Copy the below files to a folder  
 			1. Build.properties  
 			2. BuildAndDeployAngular.bat  
@@ -40,7 +40,7 @@ Detailed steps:
 			4. ANGULAR_PROJECT_NAME  
 >Step 6  : Run BuildAndDeployAngular.bat  
 >Step 7  : Check the server is up using the below link  
-		   localhost:<default> in my case it is localhost:8080  
+		   `localhost:<default>` in my case it is `localhost:8080`  
 >Step 8  : Click the Manager App button  
 >Step 9  : Enter configured username and passedword in Step 3  
 >Step 10 : You will see deployed projects and their status, in my case the project name is 'portfolio-management' and running status is 'true'  
