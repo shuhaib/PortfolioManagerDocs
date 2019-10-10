@@ -1,11 +1,13 @@
 @echo off
 echo  _-------------------------------_
 echo -_ Angular Build and Deploy Tool _-
-echo   -------------------------------
+echo    ------------------------------
+echo     -------made by @run---------
+echo    ------------------------------
 echo.
 set PROPERTY_FILE=%cd%\Build.properties
 set ROOT_LOCATION=%cd%
-echo Reading configurations from property file = %PROPERTY_FILE%
+echo Reading configurations from property file = "%PROPERTY_FILE%"
 
 set File=%PROPERTY_FILE%
 set /a count=0
@@ -37,27 +39,27 @@ For /L %%i in (1,1,%Count%) Do (
 
 
 IF NOT "%TOMCAT_ROOT%" == "" (
-	echo Tomcat Location = %TOMCAT_ROOT%
+	echo Tomcat Location = "%TOMCAT_ROOT%"
 ) ELSE (
 	echo Tomcat loaction not found, cannot proceed!
 )
 IF NOT "%ANGULAR_ROOT%" == "" (
-	echo Angular Location = %ANGULAR_ROOT%
+	echo Angular Location = "%ANGULAR_ROOT%"
 )  ELSE (
 	echo Angular loaction not found, cannot proceed!
 )
 IF NOT "%TOM_CAT_PORT%" == "" (
-	echo Tomcat Port = %TOM_CAT_PORT%
+	echo Tomcat Port = "%TOM_CAT_PORT%"
 )
 echo Finished reading all configurations
 echo.
 
-echo Stopping already running Tomcat instances, if any in port : %TOM_CAT_PORT%
+echo Stopping already running Tomcat instances, if any in port : "%TOM_CAT_PORT%"
 for /f "skip=1 tokens=5" %%a in ('netstat -aon ^| find "%TOM_CAT_PORT%" ^| find "LISTENING"') do taskkill /F /PID %%a
 echo Stopped all Tomcat instances
 echo.
 
-echo Removing the currently deployed project from TOMCAT_ROOT
+echo Removing the currently deployed project from "%TOMCAT_ROOT%\webapps"
 cd /d %TOMCAT_ROOT%\webapps
 if exist %ANGULAR_PROJECT_NAME% rmdir %ANGULAR_PROJECT_NAME% /q /s
 echo Removed already deployed project
