@@ -1,0 +1,4 @@
+-- Scripts for additional index columns
+-- Except FK, PK and UN, those are created automatically
+-- To see all indexes in a schecma use the below script
+-- SELECT DISTINCT TABLE_NAME, INDEX_NAME FROM INFORMATION_SCHEMA.STATISTICS WHERE TABLE_SCHEMA = 'portfolio_manager';
