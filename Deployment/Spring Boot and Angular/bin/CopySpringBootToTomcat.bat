@@ -17,9 +17,6 @@ For /L %%i in (1,1,%Count%) Do (
 		IF "%%a"=="SPRING_BOOT_ARTIFACT_ID" (
 			set SPRING_BOOT_ARTIFACT_ID=%%b
 		)
-		IF "%%a"=="SPRING_BOOT_PROJECT_VERSION" (
-			set SPRING_BOOT_PROJECT_VERSION=%%b
-		)
 		IF "%%a"=="SPRING_BOOT_PACKAGING" (
 			set SPRING_BOOT_PACKAGING=%%b
 		)
@@ -29,7 +26,7 @@ For /L %%i in (1,1,%Count%) Do (
 	)
 )
 
-set SPRING_BOOT_PROJECT=%SPRING_BOOT_ARTIFACT_ID%-%SPRING_BOOT_PROJECT_VERSION%
+set SPRING_BOOT_PROJECT=%SPRING_BOOT_ARTIFACT_ID%
 set SPRING_BOOT_DEPLOYABLE=%SPRING_BOOT_PROJECT%.%SPRING_BOOT_PACKAGING%
 echo Removing currently deployed Spring Boot project
 cd /d %TOM_CAT_ROOT%\webapps
