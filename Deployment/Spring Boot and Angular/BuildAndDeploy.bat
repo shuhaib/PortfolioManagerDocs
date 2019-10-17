@@ -1,10 +1,7 @@
 @echo off
-echo     	  -------made by @run-------
 echo            ----------------------
-echo               ----------------
-echo                  ----------
-echo                    ------
-echo                      --
+echo     	  -------made by @run-----
+echo            ----------------------
 echo  _ ----------------------------------------------- _
 echo -_ Spring Boot and Angular - Build and Deploy Tool _ -
 echo    -----------------------------------------------
