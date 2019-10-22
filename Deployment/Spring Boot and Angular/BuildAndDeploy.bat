@@ -35,6 +35,9 @@ For /L %%i in (1,1,%Count%) Do (
 		IF "%%a"=="ANGULAR_BASE_HREF" (
 			set ANGULAR_BASE_HREF=%%b
 		)
+		IF "%%a"=="ANGULAR_BUILD_FOLDER" (
+			set ANGULAR_BUILD_FOLDER=%%b
+		)
 	)
 )
 
@@ -73,7 +76,7 @@ call BuildAngular.bat
 echo Angular build process completed
 cd /d %ANGULAR_ROOT%\%ANGULAR_PROJECT_NAME%\dist
 echo %cd%
-xcopy %ANGULAR_PROJECT_NAME% %TOMCAT_ROOT%\webapps\%ANGULAR_PROJECT_NAME%\ /s /e /h
+xcopy %ANGULAR_BUILD_FOLDER% %TOMCAT_ROOT%\webapps\%ANGULAR_PROJECT_NAME%\ /s /e /h
 echo Angular project deployed in Tomcat
 echo.
 
